@@ -75,6 +75,21 @@ app.on('activate', () => {
 ```
 yarn electron-dev
 ```
+
+### 9) Compilar
+```
+yarn electron-pack --win
+```
+
+
+32 bit (modificamos el package.json)
+```
+"electron-pack": "electron-builder -c.extraMetadata.main=build/electron.js --ia32 --x64 -w"
+```
+y luego
+```
+npm run electron-pack
+```
 ---
 ## Corregir warning Content-Security-Policy
 En el header dentro de public/index.html agregamos:
