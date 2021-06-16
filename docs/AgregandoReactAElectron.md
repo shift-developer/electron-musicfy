@@ -81,6 +81,10 @@ yarn electron-dev
 yarn electron-pack --win
 ```
 
+```
+yarn electron-pack --mac
+```
+
 
 32 bit (modificamos el package.json)
 ```
